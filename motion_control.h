@@ -46,4 +46,6 @@ void mc_dwell(uint32_t milliseconds);
 // Send the tool home (not implemented)
 void mc_go_home();
 
+// Delay for complier mismatch.
+void delay_ms(int ms);
 #endif

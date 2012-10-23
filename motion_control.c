@@ -33,7 +33,8 @@
 void mc_dwell(uint32_t milliseconds) 
 {
   st_synchronize();
-  _delay_ms(milliseconds);
+  //_delay_ms(milliseconds);
+  delay_ms(milliseconds);
 }
 
 // Execute an arc. theta == start angle, angular_travel == number of radians to go along the arc,
@@ -84,3 +85,12 @@ void mc_go_home()
 {
   st_go_home();
 }
+
+void delay_ms( int ms )
+{
+   int i;
+   for ( i = 0; i < ms; i++)
+   {
+      _delay_ms(1);
+   }
+} 

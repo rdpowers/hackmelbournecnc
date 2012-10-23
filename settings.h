@@ -56,12 +56,12 @@ void settings_store_setting(int parameter, double value);
 
 // Default settings (used when resetting eeprom-settings)
 #define MICROSTEPS 1
-#define DEFAULT_X_STEPS_PER_MM 493
-#define DEFAULT_Y_STEPS_PER_MM 493
-#define DEFAULT_Z_STEPS_PER_MM 493
+#define DEFAULT_X_STEPS_PER_MM 506
+#define DEFAULT_Y_STEPS_PER_MM 506
+#define DEFAULT_Z_STEPS_PER_MM 506
 #define DEFAULT_STEP_PULSE_MICROSECONDS 15
 #define DEFAULT_MM_PER_ARC_SEGMENT 0.1
-#define DEFAULT_RAPID_FEEDRATE 600.0 // in millimeters per minute
+#define DEFAULT_RAPID_FEEDRATE 800.0 // in millimeters per minute
 #define DEFAULT_FEEDRATE 480.0
 #define DEFAULT_ACCELERATION (DEFAULT_FEEDRATE/100.0)
 #define DEFAULT_MAX_JERK 50.0

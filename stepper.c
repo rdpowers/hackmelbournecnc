@@ -237,7 +237,8 @@ void st_init()
   
   // set enable pin     
   //STEPPERS_ENABLE_PORT |= 1<<STEPPERS_ENABLE_BIT;
-  STEPPERS_ENABLE_PORT |= 0<<STEPPERS_ENABLE_BIT;
+  //STEPPERS_ENABLE_PORT |= 0<<STEPPERS_ENABLE_BIT; - this doesn't work, have to &=~ to bitfiddle low.
+  STEPPERS_ENABLE_PORT &= ~(1<<STEPPERS_ENABLE_BIT);
   STEPPERS_RESET_PORT |= 1<<STEPPERS_RESET_BIT;
       
   sei();  
